@@ -1,0 +1,357 @@
+<!-- /*
+* Bootstrap 5
+* Template Name: Furni
+* Template Author: Untree.co
+* Template URI: https://untree.co/
+* License: https://creativecommons.org/licenses/by/3.0/
+*/ -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Untree.co">
+  <link rel="shortcut icon" href="logo SInar Putra.png">
+
+  <meta name="description" content="" />
+  <meta name="keywords" content="bootstrap, bootstrap4" />
+
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+		<link href="css/tiny-slider.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<title>UD.Sinar Putra</title>
+	</head>
+
+	<body>
+
+		<!-- Start Header/Navigation -->
+		<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+
+			<div class="container">
+				<a class="navbar-brand d-flex align-items-center" href="index.html">
+					<img src="logo SInar Putra.png" alt="UD. Sinar Putra Logo" style="height:40px; margin-right:10px;">
+					UD. Sinar Putra<span></span>
+				</a>
+
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarsFurni">
+					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+						<li class="nav-item ">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li><a class="nav-link" href="product.html">Product</a></li>
+						<li><a class="nav-link" href="about.html">About us</a></li>
+						<li><a class="nav-link" href="services.html">Services</a></li>
+						<li class="active"><a class="nav-link" href="gallery.html">Gallery</a></li>
+						<li><a class="nav-link" href="contact.html">Contact us</a></li>
+					</ul>
+
+					<ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+						<li><a class="nav-link" href="https://wa.link/jb46io"><img src="images/whatsapp-svgrepo-com-white.svg" alt="WhatsApp" style="height: 20px"></a></li>
+							<a class="nav-link" href="https://maps.app.goo.gl/hQshK1u2mh8f5ZXM8"><img src="images/maps-and-flags-pin-svgrepo-com.svg" alt="Google Maps" style="height: 20px;"></a></li>
+						</li>
+					</ul>
+				</div>
+			</div>
+				
+		</nav>
+		<!-- End Header/Navigation -->
+
+		<!-- Start Hero Section -->
+			<div class="hero">
+				<div class="container">
+					<div class="row justify-content-between">
+						<div class="col-lg-5">
+							<div class="intro-excerpt">
+								<h1>Gallery</h1>
+								<p class="mb-4">Jelajahi koleksi Produk dan kami inspirasi desain interior atau exterior kami di galeri kami.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!-- End Hero Section -->
+	
+		<!-- Start Product/Project Section -->
+			<div class="gallery-section" style="margin-top: 60px;">
+			<div class="container">
+				<div class="row">
+
+				<!-- Modal for image zoom -->
+				<div id="imgModal" style="display:none; position:fixed; z-index:9999; left:0; top:0; width:100vw; height:100vh; background:rgba(0,0,0,0.8); align-items:center; justify-content:center;">
+					<span onclick="closeModal()" style="position:absolute; top:32px; right:48px; color:#fff; font-size:2rem; cursor:pointer; z-index:10001;">&times;</span>
+					<img id="modalImg" src="" alt="Zoomed Image" style="max-width:90vw; max-height:80vh; border-radius:16px; box-shadow:0 0 24px #000;">
+
+					<!-- tombol prev -->
+					<span onclick="prevImg()" style="position:absolute; left:30px; top:50%; transform:translateY(-50%); font-size:3rem; color:#fff; cursor:pointer; user-select:none;">&#10094;</span>
+					<!-- tombol next -->
+					<span onclick="nextImg()" style="position:absolute; right:30px; top:50%; transform:translateY(-50%); font-size:3rem; color:#fff; cursor:pointer; user-select:none;">&#10095;</span>
+				</div>
+
+				<!-- Contoh gallery item -->
+				<div class="col-12 col-md-4 col-lg-3 mb-4">
+					<div class="gallery-section" style="aspect-ratio:1/1; overflow:hidden; border-radius:16px;">
+					<img src="images/IMG_20250426_072858.jpg" 
+						class="img-fluid product-thumbnail" 
+						alt="Lantai Ulin" 
+						style="width:100%; height:100%; object-fit:cover; border-radius:16px; cursor:zoom-in;" 
+						onclick="openModal('images/IMG_20250426_072858.jpg')">
+					</div>
+				</div>
+
+				<div class="col-12 col-md-4 col-lg-3 mb-4">
+					<div class="gallery-section" style="aspect-ratio:1/1; overflow:hidden; border-radius:16px;">
+					<img src="images/IMG_20240504_104758.jpg" 
+						class="img-fluid product-thumbnail" 
+						alt="Gazebo" 
+						style="width:100%; height:100%; object-fit:cover; border-radius:16px; cursor:zoom-in;" 
+						onclick="openModal('images/IMG_20240504_104758.jpg')">
+					</div>
+				</div>
+
+				<div class="col-12 col-md-4 col-lg-3 mb-4">
+					<div class="gallery-section" style="aspect-ratio:1/1; overflow:hidden; border-radius:16px;">
+					<img src="images/IMG_20240504_104758.jpg" 
+						class="img-fluid product-thumbnail" 
+						alt="Gazebo" 
+						style="width:100%; height:100%; object-fit:cover; border-radius:16px; cursor:zoom-in;" 
+						onclick="openModal('images/IMG_20240504_104758.jpg')">
+					</div>
+				</div>
+
+				<div class="col-12 col-md-4 col-lg-3 mb-4">
+					<div class="gallery-section" style="aspect-ratio:1/1; overflow:hidden; border-radius:16px;">
+					<img src="images/IMG_20240504_104758.jpg" 
+						class="img-fluid product-thumbnail" 
+						alt="Gazebo" 
+						style="width:100%; height:100%; object-fit:cover; border-radius:16px; cursor:zoom-in;" 
+						onclick="openModal('images/IMG_20240504_104758.jpg')">
+					</div>
+				</div>
+
+				<div class="col-12 col-md-4 col-lg-3 mb-4">
+					<div class="gallery-section" style="aspect-ratio:1/1; overflow:hidden; border-radius:16px;">
+					<img src="images/IMG_20240504_104758.jpg" 
+						class="img-fluid product-thumbnail" 
+						alt="Gazebo" 
+						style="width:100%; height:100%; object-fit:cover; border-radius:16px; cursor:zoom-in;" 
+						onclick="openModal('images/IMG_20240504_104758.jpg')">
+					</div>
+				</div>
+
+				<div class="col-12 col-md-4 col-lg-3 mb-4">
+					<div class="gallery-section" style="aspect-ratio:1/1; overflow:hidden; border-radius:16px;">
+					<img src="images/IMG_20240504_104758.jpg" 
+						class="img-fluid product-thumbnail" 
+						alt="Gazebo" 
+						style="width:100%; height:100%; object-fit:cover; border-radius:16px; cursor:zoom-in;" 
+						onclick="openModal('images/IMG_20240504_104758.jpg')">
+					</div>
+				</div>
+
+				<div class="col-12 col-md-4 col-lg-3 mb-4">
+					<div class="gallery-section" style="aspect-ratio:1/1; overflow:hidden; border-radius:16px;">
+					<img src="images/IMG_20240504_104758.jpg" 
+						class="img-fluid product-thumbnail" 
+						alt="Gazebo" 
+						style="width:100%; height:100%; object-fit:cover; border-radius:16px; cursor:zoom-in;" 
+						onclick="openModal('images/IMG_20240504_104758.jpg')">
+					</div>
+				</div>
+
+				<div class="col-12 col-md-4 col-lg-3 mb-4">
+					<div class="gallery-section" style="aspect-ratio:1/1; overflow:hidden; border-radius:16px;">
+					<img src="images/IMG_20240504_104758.jpg" 
+						class="img-fluid product-thumbnail" 
+						alt="Gazebo" 
+						style="width:100%; height:100%; object-fit:cover; border-radius:16px; cursor:zoom-in;" 
+						onclick="openModal('images/IMG_20240504_104758.jpg')">
+					</div>
+				</div>
+
+				<div class="col-12 col-md-4 col-lg-3 mb-4">
+					<div class="gallery-section" style="aspect-ratio:1/1; overflow:hidden; border-radius:16px;">
+					<img src="images/IMG_20240504_104758.jpg" 
+						class="img-fluid product-thumbnail" 
+						alt="Gazebo" 
+						style="width:100%; height:100%; object-fit:cover; border-radius:16px; cursor:zoom-in;" 
+						onclick="openModal('images/IMG_20240504_104758.jpg')">
+					</div>
+				</div>
+
+				<div class="col-12 col-md-4 col-lg-3 mb-4">
+					<div class="gallery-section" style="aspect-ratio:1/1; overflow:hidden; border-radius:16px;">
+					<img src="images/IMG_20240504_104758.jpg" 
+						class="img-fluid product-thumbnail" 
+						alt="Gazebo" 
+						style="width:100%; height:100%; object-fit:cover; border-radius:16px; cursor:zoom-in;" 
+						onclick="openModal('images/IMG_20240504_104758.jpg')">
+					</div>
+				</div>
+
+				<div class="col-12 col-md-4 col-lg-3 mb-4">
+					<div class="gallery-section" style="aspect-ratio:1/1; overflow:hidden; border-radius:16px;">
+					<img src="images/IMG_20240504_104758.jpg" 
+						class="img-fluid product-thumbnail" 
+						alt="Gazebo" 
+						style="width:100%; height:100%; object-fit:cover; border-radius:16px; cursor:zoom-in;" 
+						onclick="openModal('images/IMG_20240504_104758.jpg')">
+					</div>
+				</div>
+
+				<div class="col-12 col-md-4 col-lg-3 mb-4">
+					<div class="gallery-section" style="aspect-ratio:1/1; overflow:hidden; border-radius:16px;">
+					<img src="images/IMG_20240504_104758.jpg" 
+						class="img-fluid product-thumbnail" 
+						alt="Gazebo" 
+						style="width:100%; height:100%; object-fit:cover; border-radius:16px; cursor:zoom-in;" 
+						onclick="openModal('images/IMG_20240504_104758.jpg')">
+					</div>
+				</div>
+
+				<div class="col-12 col-md-4 col-lg-3 mb-4">
+					<div class="gallery-section" style="aspect-ratio:1/1; overflow:hidden; border-radius:16px;">
+					<img src="images/IMG_20240504_104758.jpg" 
+						class="img-fluid product-thumbnail" 
+						alt="Gazebo" 
+						style="width:100%; height:100%; object-fit:cover; border-radius:16px; cursor:zoom-in;" 
+						onclick="openModal('images/IMG_20240504_104758.jpg')">
+					</div>
+				</div>
+
+				<div class="col-12 col-md-4 col-lg-3 mb-4">
+					<div class="gallery-section" style="aspect-ratio:1/1; overflow:hidden; border-radius:16px;">
+					<img src="images/IMG_20240504_104758.jpg" 
+						class="img-fluid product-thumbnail" 
+						alt="Gazebo" 
+						style="width:100%; height:100%; object-fit:cover; border-radius:16px; cursor:zoom-in;" 
+						onclick="openModal('images/IMG_20240504_104758.jpg')">
+					</div>
+				</div>
+
+				<div class="col-12 col-md-4 col-lg-3 mb-4">
+					<div class="gallery-section" style="aspect-ratio:1/1; overflow:hidden; border-radius:16px;">
+					<img src="images/IMG_20240504_104758.jpg" 
+						class="img-fluid product-thumbnail" 
+						alt="Gazebo" 
+						style="width:100%; height:100%; object-fit:cover; border-radius:16px; cursor:zoom-in;" 
+						onclick="openModal('images/IMG_20240504_104758.jpg')">
+					</div>
+				</div>
+
+				<div class="col-12 col-md-4 col-lg-3 mb-4">
+					<div class="gallery-section" style="aspect-ratio:1/1; overflow:hidden; border-radius:16px;">
+					<img src="images/IMG_20240504_104758.jpg" 
+						class="img-fluid product-thumbnail" 
+						alt="Gazebo" 
+						style="width:100%; height:100%; object-fit:cover; border-radius:16px; cursor:zoom-in;" 
+						onclick="openModal('images/IMG_20240504_104758.jpg')">
+					</div>
+				</div>
+
+				<!-- Tambahkan gambar lainnya dengan format yang sama -->
+
+				</div>
+			</div>
+			<!-- End Product/Project Section -->
+
+				<!-- Script Modal & Navigasi -->
+				<script>
+				let galleryImages = [];
+				let currentIndex = 0;
+
+				window.onload = function () {
+					// ambil semua gambar setelah halaman selesai dimuat
+					galleryImages = Array.from(document.querySelectorAll('.product-thumbnail')).map(img => img.src);
+				};
+
+				function openModal(src) {
+					currentIndex = galleryImages.indexOf(src);
+					document.getElementById('imgModal').style.display = 'flex';
+					document.getElementById('modalImg').src = src;
+				}
+
+				function closeModal() {
+					document.getElementById('imgModal').style.display = 'none';
+					document.getElementById('modalImg').src = '';
+				}
+
+				function nextImg() {
+					currentIndex = (currentIndex + 1) % galleryImages.length;
+					document.getElementById('modalImg').src = galleryImages[currentIndex];
+				}
+
+				function prevImg() {
+					currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+					document.getElementById('modalImg').src = galleryImages[currentIndex];
+				}
+
+				// Tutup modal klik background
+				document.getElementById('imgModal').addEventListener('click', function(e) {
+					if (e.target === this) closeModal();
+				});
+
+				// Navigasi pakai keyboard
+				document.addEventListener('keydown', function(e) {
+					if (document.getElementById('imgModal').style.display === 'flex') {
+					if (e.key === 'ArrowRight') nextImg();
+					if (e.key === 'ArrowLeft') prevImg();
+					if (e.key === 'Escape') closeModal();
+					}
+				});
+				</script>
+
+
+		<!-- Start Footer Section -->
+		<footer class="footer-section" style="margin-top: 100px;">
+			<div class="container relative">
+
+				<div class="sofa-img">
+					<img src="images/ChatGPT Image Aug 29, 2025, 10_26_10 AM.png" alt="Image" class="img-fluid" style="border-radius: 20px; max-width: 230px; height:auto;">
+				</div>
+
+				<div class="row g-5 mb-5">
+					<div class="col-lg-4">
+						<div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">UD. Sinar Putra<span></span></a></div>
+						<p class="mb-4">UD. Sinar Putra menghadirkan produk kayu berkualitas – kusen, pintu, jendela, tangga, lantai, hingga furnitur custom dengan pengerjaan rapi.</p>
+
+						<ul class="list-unstyled custom-social">
+							<li><a href="https://www.instagram.com/ud.sinarputrasmd?utm_source=ig_web_button_share_sheet&igsh=cW5oZWZ0YXRnNnhp"><span class="fa fa-brands fa-instagram"></span></a></li>
+							<li><a href="https://maps.app.goo.gl/hQshK1u2mh8f5ZXM8"><span class="fa fa-map-marker-alt"></span></a></li>
+							<li><a href="https://wa.link/jb46io"><span class="fa fa-brands fa-whatsapp"></span></a></li>
+						</ul>
+					</div>	
+					
+				<div class="border-top copyright">
+					<div class="row pt-4">
+						<div class="col-lg-6">
+							<p class="mb-2 text-center text-lg-start">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by <a href="https://untree.co">Untree.co</a> Distributed By <a hreff="https://themewagon.com">ThemeWagon</a>  <!-- License information: https://untree.co/license/ -->
+            </p>
+						</div>
+
+						<div class="col-lg-6 text-center text-lg-end">
+							<ul class="list-unstyled d-inline-flex ms-auto">
+								<li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</footer>
+		<!-- End Footer Section -->	
+
+
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/tiny-slider.js"></script>
+		<script src="js/custom.js"></script>
+	</body>
+
+</html>
